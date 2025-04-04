@@ -1,0 +1,28 @@
+{/*
+
+CREATE DATABASE IF NOT EXISTS Employee;
+USE Employee;
+
+DROP TABLE IF EXISTS `employees`;
+CREATE TABLE `employees`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(80) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `Email` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `ATC` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `Level` int(5) NULL DEFAULT NULL,
+  `Role` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `Project` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `Status` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+SET FOREIGN_KEY_CHECKS = 1;
+
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) values ('Neuvillette', 'neuvillette@gmail.com', 'Fontaine', '13', 'SCRUM Master', 'N/A', 'Staffed');
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) values ('Zhongli', 'zhongliqgmail.com', 'Liyue', '11', 'Financial Analyst', 'N/A', 'Staffed');
+INSERT INTO employees (Name, Email, ATC, Level, Role, Project, Status) values ('Kaedehara Kazuha', 'kazuha@gmail.com', 'Inazuma', '11', 'QA Automation test Lead', 'Tesla', 'May 21');
+
+
+SELECT * FROM employees;
+
+*/}
